@@ -1,8 +1,7 @@
 # Ashwin Ranjith Menon
 
 ## Contact Information
-- **Email:** menonar@mail.uc.edu  
-- **Phone:** (513) 837-7907  
+- **Email:** menonar@mail.uc.edu
 - **LinkedIn:** [linkedin.com/in/ashwinranjith/](https://www.linkedin.com/in/ashwinranjith/)  
 - **GitHub:** [github.com/ash-whut/](https://github.com/ash-whut/)  
 

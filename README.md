@@ -60,7 +60,7 @@ This project is influenced by several important constraints. Economically speaki
 It also furthered my professional skills in the fields of neural network architecture optimization, and reinforcement learning. Additionally, I was provided the opportunity to document my findings properly, to collaborate with other individuals and to perform research ethically. In these ways, this project directly contributed to my long term career development.
 The project also has a major impact on society. It aims to improve modulation classification by utilizing neural networks instead of classic analytical methods. There’s also the additional benefit of reducing parameter count, which enables the use of these small neural networks on edge devices making them more accessible to the general public.  
 
-## [Project Presentation](./Fall%20Design%20Presentation%20-%20Ashwin%20Menon.pdf)
+## [Project Presentation](./hw_essays/Fall%20Design%20Presentation%20-%20Ashwin%20Menon.pdf)
 
 ## Individual Assessment
 This project’s main focus is to develop lightweight neural network architectures to perform radio frequency modulation classification with a low parameter count. This will be performed by leveraging the Q-learning algorithm. Using Q-learning methods to perform architecture search could potentially even lead to the formation of novel neural network architectures. The main challenge lies in optimization of the state space, and reducing the time taken to perform exploration of said state space when running reinforcement learning experiments. This project serves as an opportunity for me to combine my interests in machine learning, and application of neural network architecture search methodologies.</br>
@@ -70,8 +70,7 @@ I am motivated to engage in this project because, as I stated before, it combine
 My preliminary approach will involve defining the reinforcement learning framework, starting with Q-learning to iteratively evaluate and refine neural network architectures for modulation classification. I will establish baselines using standard models, then measure progress against accuracy, parameter count, and computational efficiency. I expect to achieve a balance between compactness and performance, producing architectures that significantly reduce resource requirements while maintaining high classification accuracy. To evaluate my contributions, I will measure accuracy and reduction rate in parameter count compared to a pre-established baseline. I will know I have succeeded when the models I develop outperform baseline tradeoffs, when my methodology is transparent and replicable, and when I can clearly communicate both the technical details and broader impact of the work.
 
 ## Contact Information
-- **Email:** menonar@mail.uc.edu  
-- **Phone:** (513) 837-7907  
+- **Email:** menonar@mail.uc.edu
 - **LinkedIn:** [linkedin.com/in/ashwinranjith/](https://www.linkedin.com/in/ashwinranjith/)  
 - **GitHub:** [github.com/ash-whut/](https://github.com/ash-whut/)  
 
