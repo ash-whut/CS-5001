@@ -80,38 +80,15 @@ source venv/bin/activate
 
 ### 3. Install Dependencies
 
-#### Option A: Full Dependency Set (Recommended)
-
 ```
 pip install -r requirements.txt
 ```
 
 This installs all dependencies with the exact versions used in the original experiments.
 
-#### Option B: Minimal Dependency Set
+## TensorFlow Compatibility
 
-```
-pip install -r requirements.minimal.txt
-```
-
-This installs only explicitly required packages.
-
----
-
-## TensorFlow and CUDA Compatibility
-
-This project depends on legacy TensorFlow behavior and **will not work correctly with newer versions**.
-
-### Supported Versions
-
-- TensorFlow: **2.1 or lower**
-- CUDA: **10.1**
-- cuDNN: **7.6.0.64**
-
-Newer versions may cause runtime failures, particularly in:
-- One-Cycle Learning Rate scheduling
-- Optimizer behavior
-- Training callbacks
+This project is tested on **TensorFlow 2.1**
 
 ---
 
