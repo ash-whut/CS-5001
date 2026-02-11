@@ -102,3 +102,35 @@ models
 ```
 python topk-model-retraining-and-evaluation.py
 ```
+
+---
+
+## Frequently Asked Questions (FAQ)
+
+### What does a "model" represent in this project?
+
+A model refers to an **experiment definition**, not a single neural network. Each folder in `models/` defines the reinforcement learning configuration, training parameters, and evaluation settings.
+
+---
+
+### Is a GPU required?
+
+A GPU is not strictly required but is **strongly recommended** for reasonable training times.
+
+---
+
+### Where are experiment results stored?
+
+Results are automatically saved in experiment-specific output directories created during execution.
+
+---
+
+### Can I add my own experiment?
+
+Yes. Copy an existing folder inside `models/`, modify the configuration, and run it using:
+
+```
+python -m metaqnn.main your_new_model
+```
+
+---
