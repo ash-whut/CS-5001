@@ -6,54 +6,23 @@
 
 ## Overview
 
-This project implements a reinforcement learning–based framework for **Profiled Side-Channel Analysis (SCA)** using **Convolutional Neural Networks (CNNs)**. The system uses a MetaQNN-style approach to automatically explore, train, and evaluate CNN architectures for side-channel attacks.
+This project implements a reinforcement learning–based framework for **Radio Frequency Modulation Classification** using **Convolutional Neural Networks (CNNs)**. The system uses a MetaQNN style approach to automatically explore, train, and evaluate CNN architectures for side-channel attacks.
 
 The repository enables users to:
 - Run reinforcement learning experiments to generate CNN architectures
 - Train and evaluate candidate models
-- Visualize experiment results using scatter plots
-- Plot Guessing Entropy (GE) curves
-- Evaluate simple ensemble methods using top-performing models
+- Visualize experiment results using Confusion Matrices for 
 
 This document serves as a complete **user-facing reference** for installing, running, and interacting with the project.
 
 ---
-
-## Intended Audience
-
-This project is intended for:
-- Students studying machine learning, cryptography, or hardware security
-- Researchers experimenting with CNN-based side-channel analysis
-- Users with basic Python and command-line experience
-
-No prior reinforcement learning background is required.
-
----
-
-## Repository Structure
-
-```
-.
-├── metaqnn/
-│   ├── main.py              # Entry point for reinforcement learning experiments
-│   ├── display_results.py   # Result summaries and scatter plots
-│   ├── plot_top_ges.py      # Guessing Entropy plots and ensembles
-│   └── ...
-├── models/
-│   ├── experiment_1/
-│   ├── experiment_2/
-│   └── ...
-├── requirements.txt
-├── requirements.minimal.txt
-└── README.md
-```
 
 ### Key Directories
 
 - **metaqnn/**  
   Contains the reinforcement learning logic, CNN training pipeline, and visualization utilities.
 
-- **models/**  
+- **metaqnn/models/**  
   Each subdirectory defines a complete experiment, including model search space, training parameters, and dataset configuration.
 
 ---
@@ -63,25 +32,24 @@ No prior reinforcement learning background is required.
 ### 1. Clone the Repository
 
 ```
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/ash-whut/CS-5001
+cd CS-5001
 ```
 
 ---
 
-### 2. Create a Virtual Environment (Recommended)
+### 2. Create a Virtual Environment and Install Dependencies (Recommended)
 
-```
-python3 -m venv venv
-source venv/bin/activate
-```
+For the experiments in this repository, we will use Anaconda environments. Using the manual and installation for your specific OS,
+install Anaconda Distribution and tools using the link provided [here](https://www.anaconda.com/download).
 
 ---
 
 ### 3. Install Dependencies
 
 ```
-pip install -r requirements.txt
+conda env create -f environment.yml
+conda activate rfmod-metaqnn
 ```
 
 This installs all dependencies with the exact versions used in the original experiments.
@@ -92,7 +60,7 @@ This project is tested on **TensorFlow 2.1**
 
 ---
 
-## Running Experiments
+## Configuring Experiments 
 
 ### Step 1: Select an Experiment
 
@@ -127,3 +95,10 @@ This command:
 ---
 
 ## Viewing and Analyzing Results
+
+Running the following command retrains candidate models created and outputs confusion matrices for the best-performing candidate
+models
+
+```
+python topk-model-retraining-and-evaluation.py
+```
